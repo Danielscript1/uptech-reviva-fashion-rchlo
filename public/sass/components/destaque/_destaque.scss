@@ -1,0 +1,55 @@
+@import "../../abstract/variavies";
+.destaque__estilo {
+    .destaque {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .destaque__divisao {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .destaque__informacoes {
+                font-size: $tamanho-texto-destaque;
+                .destaque__descricao {
+                    font-size: $tamanho-texto-destaque/2;
+                }
+            }
+            .destaque__escolha {
+                font-size: $tamanho-texto-medidas;
+                .opcoes__tamanhos {
+                    // border: 2px solid var(--fundo-navegacao);
+                    padding: 1rem;
+                    margin: 0.2rem;
+                    cursor: pointer;
+                }
+            }
+            .destaque__botao {
+                display: grid;
+                padding: 0.2rem;
+                grid-template-columns: 1fr 2fr;
+                .botao {
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    border: none;
+                    cursor: pointer;
+                    background-color: $cor-botao-pesquisa;
+                    color: $cor-botao-texto;
+                    .alinhar1 {
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                    }
+                    .alinhar2 {
+                        padding: 1rem;
+                        font-size: 1rem;
+                    }
+                    // padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.destaque__borda {
+    border: 1px solid $cor-bordas-camisa;
+    text-align: center;
+    margin: 0.5rem;
+}

@@ -1,0 +1,9 @@
+@import "./Input/input";
+@import "./botao/botao";
+@import "../../../abstract/variavies";
+.conteudo__pesquisa {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    font-size: $tamanho-texto-pesquisa;
+}

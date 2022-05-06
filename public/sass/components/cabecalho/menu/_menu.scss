@@ -1,0 +1,10 @@
+@import "../../../abstract/variavies";
+@import "./navegacao_opcoes/navegacaoOpcoes";
+.navegacao {
+    display: flex;
+    align-items: center;
+    height: 4.8rem;
+    background-color: $cor-barra-navegacao;
+    justify-content: space-around;
+    font-family: $fonte-principal;
+}

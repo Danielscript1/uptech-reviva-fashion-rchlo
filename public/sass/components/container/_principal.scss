@@ -1,0 +1,12 @@
+.principal {
+    padding: 2rem 2.5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+//sequencia logica do html
+@import "../pesquisa/pesquisa";
+@import "../destaque/destaque";
+@import "../painel/painel";
+@import "../secao/secao";
+@import "../rodape/rodape";

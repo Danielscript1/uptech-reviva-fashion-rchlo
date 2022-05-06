@@ -1,0 +1,26 @@
+.campo__info {
+  margin-right: 8px;
+  width: 100%;
+}
+
+.botao__lupa {
+  margin-right: 8px;
+  background-color: #e5e5e5;
+  padding: 5px 2rem;
+}
+
+.conteudo__pesquisa {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.pesquisa {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+/*# sourceMappingURL=pesquisa.css.map */

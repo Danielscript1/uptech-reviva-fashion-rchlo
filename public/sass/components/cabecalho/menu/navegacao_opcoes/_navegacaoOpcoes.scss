@@ -1,0 +1,6 @@
+@import "../../../../abstract/variavies";
+@import "./nav_item_menu/item_link/nav_item";
+.navegacao__opcoes {
+    font-size: $tamanho-texto-navegacao;
+    display: flex;
+}

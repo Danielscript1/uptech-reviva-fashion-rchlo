@@ -1,0 +1,28 @@
+@import "../../abstract/variavies";
+.painel {
+    width: 100%;
+    overflow: hidden;
+    .secao__painel {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 2rem;
+        background-color: $cor-painel-principal;
+        font-size: 3rem;
+        .painel__titulo {
+            text-align: center;
+        }
+        .painel__titulo {
+            text-align: center;
+        }
+        .painel__titulo_Destaque {
+            text-align: center;
+        }
+        .painel__logo {
+            text-align: end;
+            font-size: 2rem;
+        }
+        .painel__sublogo {
+            text-align: end;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.titulo__cabecalho {
+  display: -ms-grid;
+  display: grid;
+  font-size: 5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo__cabecalho .subtitulo {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: black;
+}
+
+.nav__item_menu {
+  margin: 1rem;
+  list-style: none;
+}
+
+.navegacao__opcoes {
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navegacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.8rem;
+  background-color: #e5e5e5;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Inter", sans-serif;
+}
+
+.cabecalho {
+  width: 100%;
+}
+/*# sourceMappingURL=cabecalho.css.map */

@@ -1,0 +1,374 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo__cabecalho {
+  display: -ms-grid;
+  display: grid;
+  font-size: 5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo__cabecalho .subtitulo {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: black;
+}
+
+.nav__item_menu {
+  margin: 1rem;
+  list-style: none;
+}
+
+.navegacao__opcoes {
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navegacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.8rem;
+  background-color: #e5e5e5;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Inter", sans-serif;
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+.principal {
+  padding: 2rem 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.campo__info {
+  margin-right: 8px;
+  width: 100%;
+}
+
+.botao__lupa {
+  margin-right: 8px;
+  background-color: #e5e5e5;
+  padding: 5px 2rem;
+}
+
+.conteudo__pesquisa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.pesquisa {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+.destaque__estilo .destaque {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.destaque__estilo .destaque .destaque__divisao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__informacoes {
+  font-size: 5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__informacoes .destaque__descricao {
+  font-size: 2.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha {
+  font-size: 3.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha .opcoes__tamanhos {
+  padding: 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao {
+  display: -ms-grid;
+  display: grid;
+  padding: 0.2rem;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: none;
+  cursor: pointer;
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao .alinhar1 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao .alinhar2 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.destaque__borda {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.painel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.painel .secao__painel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  padding: 2rem;
+  background-color: #e5e5e5;
+  font-size: 3rem;
+}
+
+.painel .secao__painel .painel__titulo {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__titulo {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__titulo_Destaque {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__logo {
+  text-align: end;
+  font-size: 2rem;
+}
+
+.painel .secao__painel .painel__sublogo {
+  text-align: end;
+}
+
+.secao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.secao .cartao {
+  width: 100%;
+  overflow: hidden;
+}
+
+.secao .cartao .cartao__conteudo1 {
+  padding: 2rem 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: 1px solid #e5e5e5;
+  gap: 0.2;
+}
+
+.secao .cartao .cartao__conteudo1 .cartao__camisa {
+  grid-column: 2 span;
+  cursor: pointer;
+  width: 100%;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--fonte-principal);
+  font-size: 1.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos .opcoes__tamanhos {
+  border: 2px solid var(--fundo-navegacao);
+  padding: 0.1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.secao .cartao .cartao__conteudo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: 8px 8px;
+}
+
+.secao .cartao .cartao__conteudo .cartao__titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  grid-column: span 2;
+}
+
+.secao .cartao .cartao__conteudo .cartao__preco {
+  color: #95999c;
+  font-size: 0.9rem;
+  grid-column: span 2;
+}
+
+.secao .cartao .espaco__botao {
+  display: -ms-grid;
+  display: grid;
+  padding: 0.2rem;
+  grid-column: 1 span;
+}
+
+.secao .cartao .espaco__botao .botao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: none;
+  cursor: pointer;
+  background-color: var(--fundo-navegacao);
+  color: #fff;
+}
+
+.secao .cartao .espaco__botao .botao .espaco__imagem {
+  padding: 0.2rem;
+}
+
+.rodape {
+  width: 100%;
+  background-color: #e5e5e5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+.rodape .titulo__rodape {
+  display: -ms-grid;
+  display: grid;
+  margin: 2.4rem;
+  font-size: 3.5rem;
+}
+
+.rodape .menu__rodape {
+  color: #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.rodape .menu__rodape .centralizar {
+  padding-left: 2.5rem;
+  font-size: 2rem;
+}
+
+.rodape .menu__rodape .nav__item_rodape {
+  margin: 2.5rem;
+  list-style: none;
+}
+
+.rodape .menu__rodape .nav__item_rodape .item__link {
+  font-size: 2rem;
+  color: #000;
+}
+
+.rodape .menu__rodape .redes {
+  cursor: pointer;
+  color: #000;
+}
+
+.rodape .menu__rodape .redes .tamanho__texto {
+  font-size: 2rem;
+}
+
+.rodape .menu__rodape .contatos {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.rodape .menu__rodape .contatos .centralizar {
+  padding-left: 2.5rem;
+}
+
+.rodape .menu__rodape .Assinar {
+  color: #000;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
