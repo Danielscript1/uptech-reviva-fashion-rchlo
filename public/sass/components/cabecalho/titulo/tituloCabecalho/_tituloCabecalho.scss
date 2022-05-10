@@ -6,6 +6,6 @@
     .subtitulo {
         justify-self: end;
         font-family: $fonte-principal;
-        font-size: $tamanho-titulo/2.5;
+        font-size: calc($tamanho-titulo / 2.5);
     }
 }

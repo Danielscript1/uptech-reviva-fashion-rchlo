@@ -3,4 +3,7 @@
 .navegacao__opcoes {
     font-size: $tamanho-texto-navegacao;
     display: flex;
+    @media screen and (min-width: 0px) and(max-width: 768px) {
+        display: none;
+    }
 }

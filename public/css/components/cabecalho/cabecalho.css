@@ -18,7 +18,7 @@
 }
 
 .nav__link {
-  color: black;
+  color: #fff;
 }
 
 .nav__item_menu {
@@ -30,14 +30,40 @@
   font-size: 5rem;
   display: flex;
 }
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao__opcoes {
+    display: none;
+  }
+}
 
 .navegacao {
   display: flex;
   align-items: center;
   height: 4.8rem;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.87);
   justify-content: space-around;
   font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    height: auto;
+    padding: 2rem;
+  }
+  .navegacao .botao__toggle {
+    line-height: 2rem;
+  }
+  .navegacao .botao__toggle ul {
+    list-style: none;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .navegacao .botao__toggle {
+    display: none;
+  }
 }
 
 .cabecalho {

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,19 +20,63 @@
 
 
     <header class="cabecalho">
+        <section class="titulo">
+            <section class="titulo__cabecalho">
+                <h1>Reviva Fashion</h1>
+                <span class="subtitulo">by RCHLO</span>
+            </section>
+
+            <a href="carrinho.html">
+                <img src="./img/shopping.svg" alt="sacola de compra" />
+            </a>
+
+        </section>
+
+        <nav class="navegacao">
+
+            <!--botao collapse-->
+            <details class="botao__toggle">
+                <summary>menu</summary>
+
+                <ul>
+                    <li>
+                        <a class="nav__link" href="#">Pagina Inicial</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Masculina</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Moda Feminina</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Moda Infantíl</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Manual de Moda</a>
+                    </li>
+                </ul>
 
 
-        <div class="titulo__cabecalho">
+            </details>
 
-            <h1>Reviva Fashion</h1>
-            <span class="subtitulo">by RCHLO</span>
-
-        </div>
-
-        <img src="./img/shopping.svg" alt="sacola de compra">
-
-
-
+            <ul class="navegacao__opcoes">
+                <li class="nav__item_menu">
+                    <a class="nav__link" href="#">Pagina Inicial</a>
+                </li>
+                <li class="nav__item_menu">
+                    <a class="nav__link" href="#">Masculina</a>
+                </li>
+                <li class="nav__item_menu">
+                    <a class="nav__link" href="#">Moda Feminina</a>
+                </li>
+                <li class="nav__item_menu">
+                    <a class="nav__link" href="#">Moda Infantíl</a>
+                </li>
+                <li class="nav__item_menu">
+                    <a class="nav__link" href="#">Manual de Moda</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -41,32 +87,18 @@
     <main class="principal">
 
 
-        <nav class="navegacao">
 
-            <ul class="navegacao__opcoes">
-
-                <li class="nav__item_menu"><a class="item__link1" href="#">Pagina Inicial</a></li>
-                <li class="nav__item_menu"><a class="item__link1" href="#">Masculina</a></li>
-                <li class="nav__item_menu"><a class="item__link1" href="#">Moda Feminina</a></li>
-                <li class="nav__item_menu"><a class="item__link1" href="#">Moda Infantíl</a></li>
-                <li class="nav__item_menu"><a class="item__link1" href="#">Manual de Moda</a></li>
-            </ul>
-
-
-
-        </nav>
 
 
         <section class="pesquisa ">
-            <div class="conteudo-pesquisa">
+            <div class="conteudo__pesquisa">
 
-                <input class="campo__info--pesquisa " type="search " placeholder="Faça sua busca aqui se já souber o que está procurando... "></input>
-                <img class="imagem__info--visualizacao " src="./img/search-icon.svg " alt="Botão pesquisar"></img>
+                <input class="campo__info" type="search " placeholder="Faça sua busca aqui se já souber o que está procurando... "></input>
+                <img class="botao__lupa" src="./img/search-icon.svg " alt="Botão pesquisar"></img>
 
             </div>
 
         </section>
-
         <h2 class="titulo-pagina">Últimos lançamentos</h2>
 
         <section class="secao">
@@ -83,10 +115,12 @@
 
                 </section>
                 <section class="cartao__conteudo">
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
-                    <a href="produtosDetalhes.html">click</a>
+
 
 
                 </section>
@@ -117,8 +151,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -145,8 +181,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -173,8 +211,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -237,8 +277,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -265,8 +307,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -293,8 +337,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -321,8 +367,10 @@
                 </section>
                 <section class="cartao__conteudo">
 
-                    <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
-                    <p class="cartao__preco">R$ 39,90</p>
+                    <a href="produtosDetalhes.html">
+                        <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
+                        <p class="cartao__preco">R$ 39,90</p>
+                    </a>
 
 
 
@@ -340,12 +388,12 @@
 
         <!--painel noticias-->
 
-        <section class="painel">
+        <section class="painel__blog">
             <h2>Na dúvida sobre combinar suas roupas e ficar incrível?</h2>
             <h3>Confira nossas dicas em nosso blog.</h3>
         </section>
 
-        <section>
+        <section class="painel__centro">
 
 
             <section class="painel__central">
@@ -380,83 +428,7 @@
         </section>
 
 
-        <footer class="rodape">
 
-            <section class="titulo__rodape">
-                <h1>Reviva Fashion</h1>
-                <span class="subtitulo__rodape">by RCHLO</span>
-
-            </section>
-
-
-            <section class="menu__rodape">
-
-                <nav class="">
-                    <b class="centralizar">Menu</b>
-                    <ul class="">
-                        <li class="nav__item">
-                            <a class="item__link" href="#"></a>
-                        </li>
-                        <li class="nav__item_rodape"><a class="item__link" href="#">Pagina Inicial</a></li>
-                        <li class="nav__item_rodape"><a class="item__link" href="#">Masculina</a></li>
-                        <li class="nav__item_rodape"><a class="item__link" href="#">Moda Feminina</a></li>
-                        <li class="nav__item_rodape"><a class="item__link" href="#">Moda Infantíl</a></li>
-                        <li class="nav__item_rodape"><a class="item__link" href="#">Manual de Moda</a></li>
-                    </ul>
-
-
-                </nav>
-                <section class="redes">
-                    <p><b>Siga-nos nas redes sociais</b></p>
-                    <img src="./img/facebook.svg"></img>
-                    <img src="./img/Vector.svg"></img>
-                    <img src="./img/youtube.svg"></img>
-                    <img src="./img/insta.svg"></img>
-                </section>
-
-                <section class="">
-                    <nav class="contatos">
-                        <b class="centralizar">Entre em contato</b>
-
-
-
-
-
-                        <ul class="">
-                            <li class="nav__item_rodape"> <a class="item__link" href="#">reviva@rchlo.com.br</a> </li>
-
-                            <li class="nav__item_rodape"> <a class="item__link" href="#">WhatsApp <img src="./img/whats.svg"></img></a></li>
-
-
-
-                            <li class="nav__item_rodape"><a class="item__link" href="#">11 2123-3321 <img src="./img/phone.svg"></img></a> </li>
-
-
-
-                        </ul>
-
-
-
-                    </nav>
-
-                </section>
-
-                <section class="assinar">
-                    <p><b>Assine nossa newsletter</b></p>
-                    <input type="text"></input>
-                    <button class="botao__rodape">ASSINAR JÁ</button>
-
-                </section>
-
-            </section>
-
-
-
-
-
-
-
-        </footer>
 
 
 
@@ -467,7 +439,66 @@
     </main>
 
 
+    <footer class="rodape">
 
+        <section class="titulo__rodape">
+            <h1>Reviva Fashion</h1>
+            <span class="subtitulo__rodape">by RCHLO</span>
+
+        </section>
+
+
+
+        <section class="menu__rodape">
+
+            <nav class="">
+                <b class="centralizar">Menu</b>
+                <ul class="">
+                    <li class="nav__item">
+                        <a class="item__link" href="#"></a>
+                    </li>
+                    <li class="nav__item_rodape"><a class="item__link" href="#">Pagina Inicial</a></li>
+                    <li class="nav__item_rodape"><a class="item__link" href="#">Masculina</a></li>
+                    <li class="nav__item_rodape"><a class="item__link" href="#">Moda Feminina</a></li>
+                    <li class="nav__item_rodape"><a class="item__link" href="#">Moda Infantíl</a></li>
+                    <li class="nav__item_rodape"><a class="item__link" href="#">Manual de Moda</a></li>
+                </ul>
+
+
+            </nav>
+            <section class="redes">
+                <p><b class="tamanho__texto">Siga-nos nas redes sociais</b></p>
+                <img src="./img/facebook.svg"></img>
+                <img src="./img/Vector.svg"></img>
+                <img src="./img/youtube.svg"></img>
+                <img src="./img/insta.svg"></img>
+            </section>
+
+            <section class="">
+                <nav class="contatos">
+                    <b class="centralizar tamanho__texto">Entre em contato</b>
+                    <ul class="">
+                        <li class="nav__item_rodape"> <a class="item__link" href="#">reviva@rchlo.com.br</a> </li>
+                        <li class="nav__item_rodape"> <a class="item__link" href="#">WhatsApp <img src="./img/whats.svg"></img></a></li>
+                        <li class="nav__item_rodape"><a class="item__link" href="#">11 2123-3321 <img src="./img/phone.svg"></img></a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+            <section class="Assinar">
+
+                <b class="tamanho__texto">Assine nossa newsletter</b>
+                <input type="text"></input>
+                <button class="botao__rodape">ASSINAR JÁ</button>
+
+            </section>
+
+        </section>
+
+    </footer>
 
 
 

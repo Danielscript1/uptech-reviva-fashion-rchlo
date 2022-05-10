@@ -2,17 +2,28 @@
 .rodape {
     width: 100%;
     background-color: $cor-rodape;
+    color: $cor-texto-rodape;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
+    @media screen and (min-width: 0px) and(max-width: 768px) {
+        text-align: center;
+    }
     .titulo__rodape {
         display: grid;
         margin: 2.4rem;
         font-size: 3.5rem;
+        .subtitulo__rodape {
+            padding-left: 5rem;
+        }
     }
     .menu__rodape {
         color: $cor-texto-rodape;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        margin: 2rem;
+        @media screen and (min-width: 0px) and(max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         .centralizar {
             padding-left: 2.5rem;
             font-size: 2rem;
@@ -42,8 +53,19 @@
             }
         }
         .Assinar {
-            color: $cor-texto-rodape;
-            cursor: pointer;
+            font-size: 2.4rem;
+            .tamanho__texto {
+                font-size: 2.4rem;
+            }
+            @media screen and (min-width: 0px) and(max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .botao__rodape {
+                    padding: 1rem;
+                    margin-top: 1rem;
+                }
+            }
         }
     }
 }

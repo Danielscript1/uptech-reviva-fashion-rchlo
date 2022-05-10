@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    @media screen and (min-width: 0px) and(max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
     .cartao {
         width: 100%;
         overflow: hidden;
@@ -22,8 +25,21 @@
                 border: 1px solid var(--fonte-principal);
                 font-size: 1.5rem;
                 justify-content: end;
+                input {
+                    appearance: none;
+                    padding: 4px 4px;
+                    cursor: pointer;
+                }
+                input:checked {
+                    background-color: red;
+                    color: #fff;
+                    font-weight: 400;
+                }
+                input:before {
+                    content: attr(label);
+                }
                 .opcoes__tamanhos {
-                    border: 2px solid var(--fundo-navegacao);
+                    border: 2px solid $cor-painel-principal;
                     padding: 0.1rem;
                     margin: 0.2rem;
                     cursor: pointer;
@@ -54,8 +70,9 @@
                 grid-template-columns: 1fr auto;
                 border: none;
                 cursor: pointer;
-                background-color: var(--fundo-navegacao);
+                background-color: $cor-botao-principal;
                 color: #fff;
+                font-size: 1.5rem;
                 .espaco__imagem {
                     padding: 0.2rem;
                 }

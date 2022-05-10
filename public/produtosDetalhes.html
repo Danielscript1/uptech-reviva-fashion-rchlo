@@ -20,10 +20,38 @@
                 <span class="subtitulo">by RCHLO</span>
             </section>
 
-            <img src="./img/shopping.svg" alt="sacola de compra" />
+            <a href="carrinho.html">
+                <img src="./img/shopping.svg" alt="sacola de compra" />
+            </a>
         </section>
 
         <nav class="navegacao">
+
+            <!--botao collapse-->
+            <details class="botao__toggle">
+                <summary>menu</summary>
+
+                <ul>
+                    <li>
+                        <a class="nav__link" href="#">Pagina Inicial</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Masculina</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Moda Feminina</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Moda Infantíl</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Manual de Moda</a>
+                    </li>
+                </ul>
+
+
+            </details>
+
             <ul class="navegacao__opcoes">
                 <li class="nav__item_menu">
                     <a class="nav__link" href="#">Pagina Inicial</a>
@@ -61,7 +89,7 @@
 
             <section class="destaque">
                 <section>
-                    <img src="./img/camisas/camisas/camisa2.jpg"></img>
+                    <img src="./img/camisas/camisas/camisa2.jpg" class="capa__principal"></img>
                 </section>
 
                 <section class="destaque__divisao">
@@ -83,9 +111,11 @@
 
                     <section class="destaque__escolha">
                         <section class="tamanhos__camisas">
-                            <span class="destaque__borda opcoes__tamanhos">P</span>
-                            <span class="destaque__borda opcoes__tamanhos">M</span>
-                            <span class="destaque__borda opcoes__tamanhos">G</span>
+                            <input type="radio" class=" destaque__borda opcoes__tamanhos" name="tamanho" label="P">
+                            <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="M">
+                            <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="G">
+
+
                         </section>
 
 
@@ -131,9 +161,10 @@
                 <section class="cartao__conteudo1">
                     <img class="cartao__camisa" src="./img/camisa6.png" alt="camisa" />
                     <section class="camisa__tamanhos">
-                        <span class="opcoes__tamanhos">P</span>
-                        <span class="opcoes__tamanhos">M</span>
-                        <span class="opcoes__tamanhos">G</span>
+                        <input type="radio" class=" destaque__borda opcoes__tamanhos" name="tamanho" label="P">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="M">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="G">
+
                     </section>
 
                 </section>
@@ -141,7 +172,7 @@
 
                     <h3 class="cartao__titulo">Camiseta Reviva K22, Preta</h3>
                     <p class="cartao__preco">R$ 39,90</p>
-                    <a href="produtosDetalhes.html">click</a>
+
 
 
                 </section>
@@ -164,9 +195,10 @@
                 <section class="cartao__conteudo1">
                     <img class="cartao__camisa" src="./img/camisa3.png" alt="camisa" class="media" />
                     <section class="camisa__tamanhos">
-                        <span class="opcoes__tamanhos">P</span>
-                        <span class="opcoes__tamanhos">M</span>
-                        <span class="opcoes__tamanhos">G</span>
+                        <input type="radio" class=" destaque__borda opcoes__tamanhos" name="tamanho" label="P">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="M">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="G">
+
                     </section>
 
                 </section>
@@ -192,9 +224,9 @@
                 <section class="cartao__conteudo1">
                     <img class="cartao__camisa" src="./img/camisa4.1.png" alt="camisa" class="imagem-media" />
                     <section class="camisa__tamanhos">
-                        <span class="opcoes__tamanhos">P</span>
-                        <span class="opcoes__tamanhos">M</span>
-                        <span class="opcoes__tamanhos">G</span>
+                        <input type="radio" class=" destaque__borda opcoes__tamanhos" name="tamanho" label="P">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="M">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="G">
                     </section>
 
                 </section>
@@ -220,9 +252,9 @@
                 <section class="cartao__conteudo1">
                     <img class="cartao__camisa" src="./img/camisa5.png" alt="camisa" class="imagem-media" />
                     <section class="camisa__tamanhos">
-                        <span class="opcoes__tamanhos">P</span>
-                        <span class="opcoes__tamanhos">M</span>
-                        <span class="opcoes__tamanhos">G</span>
+                        <input type="radio" class=" destaque__borda opcoes__tamanhos" name="tamanho" label="P">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="M">
+                        <input type="radio" class="destaque__borda opcoes__tamanhos" name="tamanho" label="G">
                     </section>
 
                 </section>
@@ -265,6 +297,7 @@
         </section>
 
 
+
         <section class="menu__rodape">
 
             <nav class="">
@@ -304,8 +337,9 @@
 
             </section>
 
-            <section class="assinar">
-                <b class="tamanho__texto">Assine nossa newsletter</b></br>
+            <section class="Assinar">
+
+                <b class="tamanho__texto">Assine nossa newsletter</b>
                 <input type="text"></input>
                 <button class="botao__rodape">ASSINAR JÁ</button>
 

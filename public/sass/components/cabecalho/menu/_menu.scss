@@ -7,4 +7,23 @@
     background-color: $cor-barra-navegacao;
     justify-content: space-around;
     font-family: $fonte-principal;
+    @media screen and (min-width: 0px) and(max-width: 768px) {
+        font-size: 5rem;
+        font-weight: 700;
+        color: #fff;
+        height: auto;
+        padding: 2rem;
+        .botao__toggle {
+            line-height: 2rem;
+            ul {
+                list-style: none;
+                font-size: 3.5rem;
+            }
+        }
+    }
+    @media screen and (min-width: 769px) and(max-width: 1400px) {
+        .botao__toggle {
+            display: none;
+        }
+    }
 }
