@@ -6,7 +6,7 @@ function calculoTotal(carrinho) {
 
 
 }
-document.querySelector('#totalCarrinho').innerHTML = calculoTotal(carrinho);
+//document.querySelector('#totalCarrinho').innerHTML = calculoTotal(carrinho);
 
 //document.querySelector('#totalCarrinho').innerHTML = "ola";
 console.log(calculoTotal(carrinho))

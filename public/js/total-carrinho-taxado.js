@@ -7,7 +7,11 @@ console.log(produtosTaxados);
 
 //adicionando 7% ao produtos encontrados 
 const porcentagem = produtosTaxados.map(
-    taxa => (((taxa * 7) / 100) + taxa).toFixed(2)
+    taxa => (((taxa * 7) / 100) + taxa)
 
 );
 console.log(porcentagem)
+
+//somando os valores
+const total = porcentagem.reduce((acum, valorAtual) => acum + valorAtual, 0);
+console.log(total.toFixed(2))
