@@ -1,0 +1,11 @@
+@import "../../../../abstract/variavies";
+.titulo__cabecalho {
+    display: grid;
+    font-size: $tamanho-titulo;
+    font-family: $fonte-principal;
+    .subtitulo {
+        justify-self: end;
+        font-family: $fonte-principal;
+        font-size: calc($tamanho-titulo / 2.5);
+    }
+}

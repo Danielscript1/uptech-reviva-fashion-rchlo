@@ -1,0 +1,713 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo__cabecalho {
+  display: -ms-grid;
+  display: grid;
+  font-size: 5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo__cabecalho .subtitulo {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-family: "Inter", sans-serif;
+  font-size: calc($tamanho-titulo / 2.5);
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+.nav__item_menu {
+  margin: 1rem;
+  list-style: none;
+}
+
+.navegacao__opcoes {
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao__opcoes {
+    display: none;
+  }
+}
+
+.navegacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.8rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    height: auto;
+    padding: 2rem;
+  }
+  .navegacao .botao__toggle {
+    line-height: 2rem;
+  }
+  .navegacao .botao__toggle ul {
+    list-style: none;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .navegacao .botao__toggle {
+    display: none;
+  }
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+.principal {
+  padding: 2rem 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  font-size: 3rem;
+}
+
+.campo__info {
+  margin-right: 8px;
+  width: 100%;
+}
+
+.botao__lupa {
+  margin-right: 8px;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 5px 2rem;
+}
+
+.conteudo__pesquisa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .conteudo__pesquisa {
+    gap: 0rem;
+  }
+}
+
+.pesquisa {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .destaque__estilo {
+    width: 100%;
+  }
+}
+
+.destaque__estilo .destaque {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .destaque__estilo .destaque {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .destaque__estilo .destaque .capa__principal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .destaque__estilo .destaque {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .destaque__estilo .destaque .capa__principal {
+    width: 100%;
+  }
+}
+
+.destaque__estilo .destaque .destaque__divisao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1297px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__opcoes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__opcoes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__opcoes {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__informacoes {
+  font-size: 5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__informacoes .destaque__descricao {
+  font-size: 2.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha {
+  font-size: 3.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha .tamanhos__camisas input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 4px;
+  cursor: pointer;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha .tamanhos__camisas input:checked {
+  background-color: red;
+  color: #fff;
+  font-weight: 400;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha .tamanhos__camisas input:before {
+  content: attr(label);
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__escolha .opcoes__tamanhos {
+  padding: 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao {
+  display: -ms-grid;
+  display: grid;
+  padding: 0.2rem;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1297px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__botao {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__botao {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__botao {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .destaque__estilo .destaque .destaque__divisao .destaque__botao .botao {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao .alinhar1 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.destaque__estilo .destaque .destaque__divisao .destaque__botao .botao .alinhar2 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.destaque__borda {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.painel {
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.painel .secao__painel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  font-size: 3rem;
+}
+
+.painel .secao__painel .painel__titulo {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__titulo {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__titulo_Destaque {
+  text-align: center;
+}
+
+.painel .secao__painel .painel__logo {
+  text-align: end;
+  font-size: 2rem;
+}
+
+.painel .secao__painel .painel__sublogo {
+  text-align: end;
+}
+
+.painel__central {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.secao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .secao {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.secao .cartao {
+  width: 100%;
+  overflow: hidden;
+}
+
+.secao .cartao .cartao__conteudo1 {
+  padding: 2rem 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  gap: 0.2;
+}
+
+.secao .cartao .cartao__conteudo1 .cartao__camisa {
+  grid-column: 2 span;
+  cursor: pointer;
+  width: 100%;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--fonte-principal);
+  font-size: 1.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 4px;
+  cursor: pointer;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos input:checked {
+  background-color: red;
+  color: #fff;
+  font-weight: 400;
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos input:before {
+  content: attr(label);
+}
+
+.secao .cartao .cartao__conteudo1 .camisa__tamanhos .opcoes__tamanhos {
+  border: 2px solid rgba(0, 0, 0, 0.87);
+  padding: 0.1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.secao .cartao .cartao__conteudo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: 8px 8px;
+}
+
+.secao .cartao .cartao__conteudo .cartao__titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  grid-column: span 2;
+}
+
+.secao .cartao .cartao__conteudo .cartao__preco {
+  color: #95999c;
+  font-size: 0.9rem;
+  grid-column: span 2;
+}
+
+.secao .cartao .espaco__botao {
+  display: -ms-grid;
+  display: grid;
+  padding: 0.2rem;
+  grid-column: 1 span;
+}
+
+.secao .cartao .espaco__botao .botao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.secao .cartao .espaco__botao .botao .espaco__imagem {
+  padding: 0.2rem;
+}
+
+.rodape {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .rodape {
+    text-align: center;
+  }
+}
+
+.rodape .titulo__rodape {
+  display: -ms-grid;
+  display: grid;
+  margin: 2.4rem;
+  font-size: 3.5rem;
+}
+
+.rodape .titulo__rodape .subtitulo__rodape {
+  padding-left: 5rem;
+}
+
+.rodape .menu__rodape {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .rodape .menu__rodape {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.rodape .menu__rodape .centralizar {
+  padding-left: 2.5rem;
+  font-size: 2rem;
+}
+
+.rodape .menu__rodape .nav__item_rodape {
+  margin: 2.5rem;
+  list-style: none;
+}
+
+.rodape .menu__rodape .nav__item_rodape .item__link {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.rodape .menu__rodape .redes {
+  cursor: pointer;
+  color: #fff;
+}
+
+.rodape .menu__rodape .redes .tamanho__texto {
+  font-size: 2rem;
+}
+
+.rodape .menu__rodape .contatos {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.rodape .menu__rodape .contatos .centralizar {
+  padding-left: 2.5rem;
+}
+
+.rodape .menu__rodape .Assinar {
+  font-size: 2.4rem;
+}
+
+.rodape .menu__rodape .Assinar .tamanho__texto {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .rodape .menu__rodape .Assinar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rodape .menu__rodape .Assinar .botao__rodape {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.compra {
+  width: 100%;
+}
+
+.compra .compra__divisao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  font-size: 10rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .compra .compra__divisao {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 10rem;
+  }
+}
+
+.compra .compra__divisao .compra__camisa {
+  /*display: grid;
+            grid-template-rows: repeat(2, 1fr);*/
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .compra .compra__divisao .compra__camisa .compra__categorias {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .compra__borda {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  width: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .compra .compra__divisao .compra__camisa .compra__categorias .compra__borda {
+    width: 50%;
+  }
+  .compra .compra__divisao .compra__camisa .compra__categorias .compra__borda .compra__camisa {
+    width: 100%;
+  }
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .camisa__tamanhos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0rem;
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .camisa__tamanhos input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 4px;
+  cursor: pointer;
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .camisa__tamanhos input:checked {
+  background-color: red;
+  color: #fff;
+  font-weight: 400;
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .camisa__tamanhos input:before {
+  content: attr(label);
+}
+
+.compra .compra__divisao .compra__camisa .compra__categorias .camisa__tamanhos .opcoes__tamanhos {
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.compra .compra__divisao .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.compra .compra__divisao .total .total__informacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: #c8adad;
+}
+
+.compra .compra__divisao .total .total__informacoes .total__divisao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 3rem;
+}
+
+/*$layout-breakpoint-small: 768px;
+@media (max-width: $layout-breakpoint-small) {
+    .compra__divisao {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10rem;
+    }
+}*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,QAAQ;EAC/B,GAAG,EAAE,IAAI;CACZ",
+    "sources": [
+        "conteudoPesquisa.scss"
+    ],
+    "names": [],
+    "file": "conteudoPesquisa.css"
+}

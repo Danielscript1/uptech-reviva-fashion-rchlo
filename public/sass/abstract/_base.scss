@@ -1,0 +1,10 @@
+@import "./variavies";
+* {
+    box-sizing: border-box;
+    /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 62.5%;
+    font-family: $fonte-principal;
+}

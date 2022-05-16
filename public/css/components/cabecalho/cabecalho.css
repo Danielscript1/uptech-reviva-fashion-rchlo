@@ -1,0 +1,73 @@
+.titulo__cabecalho {
+  display: grid;
+  font-size: 5rem;
+  font-family: "Inter", sans-serif;
+}
+.titulo__cabecalho .subtitulo {
+  justify-self: end;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+.nav__item_menu {
+  margin: 1rem;
+  list-style: none;
+}
+
+.navegacao__opcoes {
+  font-size: 5rem;
+  display: flex;
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao__opcoes {
+    display: none;
+  }
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  justify-content: space-around;
+  font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .navegacao {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    height: auto;
+    padding: 2rem;
+  }
+  .navegacao .botao__toggle {
+    line-height: 2rem;
+  }
+  .navegacao .botao__toggle ul {
+    list-style: none;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .navegacao .botao__toggle {
+    display: none;
+  }
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+/*# sourceMappingURL=cabecalho.css.map */

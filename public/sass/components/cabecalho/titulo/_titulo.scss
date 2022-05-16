@@ -1,0 +1,9 @@
+@import "../../../abstract/variavies";
+@import "./tituloCabecalho/tituloCabecalho";
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+    cursor: pointer;
+}
