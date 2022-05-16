@@ -1,60 +1,72 @@
-//camisetas todos 10% descontos,mesma categoria ganhar um adicionau 5$ no segundo item
-//taxa add $3,99 jeans
 const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
 const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 
-//união dos arrays
-const uniaoArrays = produtos.concat(precos)
-console.log("uniao dos produtos com preço", uniaoArrays)
-const produtosPrecos = []
+//funcao
+const criarCarrinho = (produtos, precos) => {
+    let carrinho = [];
+    for (i = 0; i < produtos.length; i++) {
 
+        let produto = produtos[i];
+        let preco = precos[i];
+        let valorDesconto = calcularDesconto(carrinho, produto, preco);
+        let valorTaxa = calcularTaxa(produto);
+        let valorPagar = ((preco - valorDesconto) + valorTaxa);
 
-
-const separando = uniaoArrays
-    .map((valorProduto, indiceAtual) => {
-        if (uniaoArrays.includes(valorProduto) && uniaoArrays.includes(valorProduto, indiceAtual + 1)) {
-
-
-            produtosPrecos.push(valorProduto);
-
-            return valorProduto;
-
-        }
-
-
-        return valorProduto;
-    })
-
-console.log("produtos com seus respectivos valores separados", produtosPrecos)
-
-//separar os produtos dos precos
-
-//improvisei porque não consegui separa os numeros do array, a ideia seria separa nome dos produtos encontrados, dos seus respectivos valores  e depois somar
-let apenasPreco = produtosPrecos;
-let buscar = "Camiseta Básica";
-let indice = apenasPreco.indexOf(buscar);
-while (indice >= 0) {
-    apenasPreco.splice(indice, 1);
-    indice = apenasPreco.indexOf(buscar);
+        carrinho = [...carrinho,
+            {
+                "categoria": produtos[i],
+                "valorOriginal": precos[i],
+                "valorDesconto": valorDesconto,
+                "valorTaxa": valorTaxa,
+                "valorPagar": valorPagar
+            }
+        ]
+    }
+    return carrinho;
 }
-console.log(apenasPreco);
 
-//calculando valor encima dos produtos separados! calculo 10%
-const mesmaCategoriaPorcentagemPadrao = produtosPrecos.map(
+const calcularDesconto = (carrinho, produto, preco) => {
+    let percentualDescontoCamisa = 0.1;
+    let percentualMesmaCategoria = 0.05;
+    let percentualDesconto = 0;
+    if (produto.includes("Camiseta")) {
+        percentualDesconto += percentualDescontoCamisa
+    }
+    if (carrinho.filter(x => x.categoria === produto).length === 1) {
+        percentualDesconto += percentualMesmaCategoria;
+    }
+    return (preco * percentualDesconto)
+}
 
-    taxa => ((taxa - ((taxa * 10) / 100))))
+const calcularTaxa = (produto) => {
+    let taxaFixaJeans = 3.99;
+    if (produto.includes("Jeans")) {
+        return taxaFixaJeans;
+    }
+    return 0;
+}
+
+// carrinho.reduce((acum, valorAtual) => acum + valorAtual, 0)
+const calcularTotalCaixa = (carrinho) => {
+    let qtdItems = carrinho.length;
+    let totalOriginal = carrinho.reduce((acum, produto) => acum + produto.valorOriginal, 0);
+    let totalDesconto = carrinho.reduce((acum, produto) => acum + produto.valorDesconto, 0);
+    let totalTaxa = carrinho.reduce((acum, produto) => acum + produto.valorTaxa, 0);
+    let totalCarrinho = carrinho.reduce((acum, produto) => acum + produto.valorPagar, 0);
+
+    return {
+        "qtdItems": qtdItems,
+        "totalOriginal": totalOriginal,
+        "totalDesconto": totalDesconto,
+        "totalTaxa": totalTaxa,
+        "totalCarrinho": totalCarrinho
+    };
+
+}
 
 
-console.log("Desconto Geral", mesmaCategoriaPorcentagemPadrao)
 
-
-
-
-//somar total
-
-const DescontoCategoriaPadrao = mesmaCategoriaPorcentagemPadrao.reduce((acum, valorAtual) => acum + valorAtual, 0);
-console.log("total de Desconto mesma Categoria : ", DescontoCategoriaPadrao)
-
-//somar um item especifico 
-
-//incompleto vou tentar concluir ate terca com os dmais card , pois se eu consegui esse acredito que concluo os outros
+let carrinho = criarCarrinho(produtos, precos);
+let totalCaixa = calcularTotalCaixa(carrinho);
+console.log("Carrinho:", carrinho);
+console.log("Total Caixa:", totalCaixa);
