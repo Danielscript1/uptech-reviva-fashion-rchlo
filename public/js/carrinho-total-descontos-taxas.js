@@ -4,6 +4,8 @@ const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 //funcao
 const criarCarrinho = (produtos, precos) => {
     let carrinho = [];
+
+
     for (i = 0; i < produtos.length; i++) {
 
         let produto = produtos[i];
@@ -11,6 +13,7 @@ const criarCarrinho = (produtos, precos) => {
         let valorDesconto = calcularDesconto(carrinho, produto, preco);
         let valorTaxa = calcularTaxa(produto);
         let valorPagar = ((preco - valorDesconto) + valorTaxa);
+
 
         carrinho = [...carrinho,
             {
@@ -20,7 +23,10 @@ const criarCarrinho = (produtos, precos) => {
                 "valorTaxa": valorTaxa,
                 "valorPagar": valorPagar
             }
+
         ]
+
+
     }
     return carrinho;
 }

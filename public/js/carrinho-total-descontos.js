@@ -11,9 +11,11 @@ const totalSemDesconto = carrinho
             produtosParaDesconto.push(valorProduto);
             return valorProduto;
         }
+
         return valorProduto;
 
     }).reduce(calculaTotal, 0);
+
 
 const totalDosProdutosComDesconto = produtosParaDesconto
     .reduce((acc, valorAtual) => calculaTotal(acc, valorAtual * desconto), 0);
