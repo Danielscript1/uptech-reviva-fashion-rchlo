@@ -702,6 +702,10 @@
   font-size: 3rem;
 }
 
+.compra .compra__divisao .total .total__informacoes .total__divisao #totalCarrinho {
+  font-size: 2rem;
+}
+
 /*$layout-breakpoint-small: 768px;
 @media (max-width: $layout-breakpoint-small) {
     .compra__divisao {

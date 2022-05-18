@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 
 
+
 </head>
 
 <body>
@@ -135,7 +136,7 @@
                         </section>
                         <section>
                             <h2>Subtotal</h2>
-                            <p>R$ 39,90</p>
+                            <p id="total">R$ 39,90</p>
                         </section>
 
                     </section>
@@ -182,7 +183,7 @@
                     <section class="total__informacoes">
                         <section class="total__divisao">
                             <p>Total</p>
-                            <p>R$ 159,70</p>
+                            <p>R$ <span id="totalCarrinho"></span></p>
                         </section>
 
                         <p>1 x 39,90 = 39,90</p>
@@ -261,7 +262,7 @@
         </section>
 
     </footer>
-
+    <script type="text/javascript" src="js/total-carrinho.js"></script>
 </body>
 
 </html>
