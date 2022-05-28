@@ -114,6 +114,7 @@
 
     botoes.forEach((el, key) => el.addEventListener('click', event => removeEstoque(key)));
 
+
     function removeEstoque(id) {
 
         if (recebendoArquivos[id].quantidade_disponivel >= 1) {
