@@ -1,6 +1,9 @@
 const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
 const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 
+
+
+
 //funcao
 const criarCarrinho = (produtos, precos) => {
     let carrinho = [];
@@ -72,7 +75,7 @@ const calcularTotalCaixa = (carrinho) => {
 
 
 
-let carrinho = criarCarrinho(produtos, precos);
+let carrinho = criarCarrinho(produto, preco);
 let totalCaixa = calcularTotalCaixa(carrinho);
 console.log("Carrinho:", carrinho);
 console.log("Total Caixa:", totalCaixa);

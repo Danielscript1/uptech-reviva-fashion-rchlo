@@ -1,6 +1,8 @@
 const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
 const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 
+
+
 const criarCarrinho = (produtos, precos) => {
     let produto = [];
     for (i = 0; i < produtos.length; i++) {
@@ -55,3 +57,5 @@ const mostrar = (carrinho) => {
 
 mostrar(carrinho)
 console.log(exibir)
+
+}
